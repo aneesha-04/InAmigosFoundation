@@ -1,21 +1,15 @@
-/* ==========================================================================
-   InAmigos Foundation - Simple CSS Stylesheet
-   This stylesheet is structured to be easy to read and modify.
-   ========================================================================== */
 
-/* --- CSS Variables --- */
-:root {
-    --primary-color: #00A63E;       /* InAmigos green theme */
+: root {
+    --primary-color: #00A63E;       
     --primary-hover: #008431;
-    --dark-bg: #121A2A;             /* Dark background for special sections */
-    --light-bg: #F4F6F9;            /* Light gray background */
-    --text-color: #333333;          /* Main text color */
-    --text-muted: #666666;          /* Gray text */
+    --dark-bg: #121A2A;             
+    --light-bg: #F4F6F9;            
+    --text-color: #333333;         
+    --text-muted: #666666;       
     --white: #ffffff;
     --font-family: 'Inter', sans-serif;
 }
 
-/* --- Base Rules --- */
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +27,7 @@ body {
     background-color: var(--white);
 }
 
-/* Container to center content */
+
 .container {
     width: 90%;
     max-width: 1100px;
@@ -41,7 +35,6 @@ body {
     padding: 0 15px;
 }
 
-/* Section Spacing */
 .section {
     padding: 70px 0;
 }
@@ -55,7 +48,7 @@ body {
     color: var(--white);
 }
 
-/* Section Header Typography */
+
 .section-tag {
     color: var(--primary-color);
     font-weight: 700;
@@ -90,8 +83,6 @@ body {
 .text-center {
     text-align: center;
 }
-
-/* --- Layout Grids (Standard & Easy) --- */
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -110,20 +101,18 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-
-/* --- Header & Navigation Bar --- */
 .navbar {
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: var(--primary-color);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 12px 0; /* More compact navbar padding */
+    padding: 12px 0; 
 }
 
 .navbar-container {
     display: flex;
-    justify-content: space-between; /* Space out logo on left and links on right */
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -154,17 +143,16 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--white);
-    font-weight: 700;    /* Bold text */
-    margin-left: 25px;   /* Clean spacing between menu items */
-    font-size: 1.05rem;  /* Clear, legible links */
+    font-weight: 700;    
+    margin-left: 25px;   
+    font-size: 1.05rem;  
     transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
+.nav-links a: hover {
     opacity: 0.85;
 }
 
-/* --- Hero Section --- */
 .hero {
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
@@ -172,19 +160,19 @@ body {
     background-size: cover;
     background-position: center;
     color: var(--white);
-    text-align: center; /* Center align the content */
+    text-align: center; 
     padding: 120px 0;
 }
 
 .hero-content {
-    max-width: 1000px; /* Generous width for the cards grid */
+    max-width: 1000px; 
     margin: 0 auto;
-    text-align: center; /* Center text aligning */
+    text-align: center; 
 }
 
 .hero-badge {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent light pill badge */
+    background-color: rgba(255, 255, 255, 0.85); 
     color: #222222;
     padding: 10px 25px;
     border-radius: 20px;
@@ -195,7 +183,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.7rem; /* Even more compact and smaller */
+    font-size: 2.7rem; 
     line-height: 1.25;
     margin-bottom: 45px;
     font-weight: 800;
@@ -204,26 +192,26 @@ body {
 }
 
 .hero h1 .highlight {
-    color: #c6ff00; /* Neon yellow/lime highlight matching the screenshot */
+    color: #c6ff00; 
 }
 
 .hero-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns spanning 100% of the container width */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
     margin-top: 40px;
     width: 100%;
 }
 
 .hero-card {
-    background-color: rgba(0, 115, 43, 0.8); /* Semi-transparent green matching the photo cards */
-    border-radius: 18px; /* High border-radius for rounded corners */
+    background-color: rgba(0, 115, 43, 0.8); 
+    border-radius: 18px;
     padding: 22px 25px;
-    width: 100%; /* Span full width of grid column */
-    min-height: 130px; /* Rectangular shape */
+    width: 100%;
+    min-height: 130px; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center content */
+    justify-content: center; 
     text-align: left;
     color: var(--white);
     transition: transform 0.2s ease, background-color 0.2s ease;
@@ -247,7 +235,7 @@ body {
     font-weight: 400;
 }
 
-/* --- Responsive break control helper --- */
+
 .desktop-only {
     display: none;
 }
@@ -257,7 +245,7 @@ body {
     }
 }
 
-/* --- Buttons --- */
+
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -296,7 +284,7 @@ body {
     text-align: center;
 }
 
-/* --- About Section --- */
+
 .about-text h2 {
     font-size: 2.2rem;
     margin-bottom: 20px;
@@ -315,7 +303,7 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* --- Project Cards --- */
+
 .card {
     background-color: var(--white);
     border: 1px solid #e2e8f0;
@@ -324,7 +312,7 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
+.card: hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
@@ -350,7 +338,6 @@ body {
     color: var(--text-muted);
 }
 
-/* --- Purpose Box (Grid List) --- */
 .purpose-box {
     background-color: var(--light-bg);
     padding: 25px;
@@ -376,7 +363,7 @@ body {
     color: var(--text-muted);
 }
 
-/* --- Impact & Stats --- */
+
 .stats-container {
     margin-top: 30px;
 }
@@ -397,7 +384,6 @@ body {
     color: #cbd5e1;
 }
 
-/* --- Gallery Grid --- */
 .gallery-card {
     border-radius: 8px;
     overflow: hidden;
@@ -415,7 +401,7 @@ body {
     transform: scale(1.05);
 }
 
-/* --- Donation Banner --- */
+
 .donation-box {
     background-color: var(--light-bg);
     border-left: 5px solid var(--primary-color);
@@ -464,7 +450,6 @@ body {
     color: var(--primary-color);
 }
 
-/* --- Contact & Form --- */
 .contact-info h2 {
     font-size: 2rem;
     margin-bottom: 15px;
@@ -515,13 +500,13 @@ body {
     font-family: var(--font-family);
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.form-group input: focus,
+.form-group select: focus,
+.form-group textarea: focus {
     border-color: var(--primary-color);
 }
 
-/* --- Footer --- */
+
 .footer {
     background-color: var(--dark-bg);
     color: var(--white);
@@ -559,7 +544,7 @@ body {
     transition: color 0.2s ease;
 }
 
-.social-icons a:hover {
+.social-icons a: hover {
     color: var(--primary-color);
 }
 
@@ -570,17 +555,13 @@ body {
     color: #64748B;
 }
 
-/* ==========================================================================
-   Responsive Overrides
-   ========================================================================== */
-
 @media (max-width: 900px) {
     .grid-3, .grid-4 {
         grid-template-columns: repeat(2, 1fr);
     }
     
     .hero-cards {
-        grid-template-columns: repeat(2, 1fr); /* Break into 2 columns on tablet */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
@@ -599,7 +580,7 @@ body {
     }
     
     .hero-cards {
-        grid-template-columns: 1fr; /* Stack vertically on mobile */
+        grid-template-columns: 1fr; 
     }
     
     .grid-2, .grid-3, .grid-4 {
@@ -607,6 +588,6 @@ body {
     }
     
     .about-image {
-        order: -1; /* Display image on top of text on mobile screens */
+        order: -1; 
     }
 }
